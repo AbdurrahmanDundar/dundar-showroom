@@ -71,7 +71,7 @@ const CarsPage = () => {
                     <BottomEdgeDown color={COLORS.SECONDARY} />
                 </div>
                 <div className="description">
-                    <h2>We are Dundar Showroom</h2>
+                    <h2>We are Dündar Showroom</h2>
                     <p>{carsPageDescription}</p>
                     <BottomEdgeUp color={COLORS.BLACK} />
                 </div>

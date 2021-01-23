@@ -39,7 +39,7 @@ const IndexPage = () => {
         }
         homePageFeaturedCars{
           ...on WPGraphql_Car{
-            id 
+            slug 
             car{
               brand
               name
