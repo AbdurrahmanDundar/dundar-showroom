@@ -73,7 +73,7 @@ const CarsPage = () => {
                 <div className="description">
                     <h2>We are Dundar Showroom</h2>
                     <p>{carsPageDescription}</p>
-                    <BottomEdgeUp color={COLORS.BLACK}/>
+                    <BottomEdgeUp color={COLORS.BLACK} />
                 </div>
                 <div className="artists">
                     <h2>Our Cars</h2>
@@ -85,7 +85,9 @@ const CarsPage = () => {
                                     <p>
                                         {car.brand} {car.name}
                                     </p>
-                                    <p>{car.modelYear}</p>
+                                    <p>
+                                        {car.modelYear}
+                                    </p>
                                 </div>
                             </Artist>
                         ))}
