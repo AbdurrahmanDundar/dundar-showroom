@@ -64,13 +64,13 @@ const IndexPage = () => {
   }
 }
 `)
-console.log(homePageFeaturedCars)
+  console.log(homePageFeaturedCars)
   return (
     <Layout>
       <SEO title="Home" />
       <Wrapper>
         <div className="banner">
-          <Image fluid={homePageHeaderPicture.imageFile.childImageSharp.fluid} alt={homePageHeaderPicture.altText}/>
+          <Image fluid={homePageHeaderPicture.imageFile.childImageSharp.fluid} alt={homePageHeaderPicture.altText} />
           <div className="inner-div">
             <p className="header-title">{homePageHeaderTitle}</p>
           </div>
@@ -87,8 +87,12 @@ console.log(homePageFeaturedCars)
               <Artist key={slug} to={`/${slug}`}>
                 <Image fluid={car.profile.imageFile.childImageSharp.fluid} alt={car.profile.altText} />
                 <div className="artist-info">
-                  <p>{car.brand} {car.name}</p>
-                  <p>{car.modelYear}</p>
+                  <p>
+                    {car.brand} {car.name}
+                  </p>
+                  <p>
+                    {car.modelYear}
+                  </p>
                 </div>
               </Artist>
             ))}
